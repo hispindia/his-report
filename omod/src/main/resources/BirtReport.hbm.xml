@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.openmrs.module.report.model">
+
+	<class name="BirtReport" table="birt_report" batch-size="500">
+
+		<id name="id" type="int" column="id" unsaved-value="0">
+				<generator class="native" />
+		</id>
+		<property name="name" column="name" length="255"/>
+		<property name="description" column="description"  />
+		<property name="createdOn" column="created_on"  />
+		<property name="createdBy" column="created_by" length="255" />
+		<property name="retired" column="retired" />
+		<set name="reportTypes" table="birt_report_type"  lazy="false">
+            <key column="report_id" />
+            <one-to-many  class="BirtReportType" />
+        </set>
+        <set name="reportRoles" table="birt_report_roles" cascade="save-update,merge,evict" lazy="false">
+            <key column="report_id" />
+            <many-to-many column="role"  class="org.openmrs.Role" />
+        </set>
+	</class>
+</hibernate-mapping>

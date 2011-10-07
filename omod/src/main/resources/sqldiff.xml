@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqldiff PUBLIC "-//OpenMRS//DTD OpenMRS SQL Diff Config 1.0//EN" "http://resources.openmrs.org/doctype/sqldiff-1.0.dtd">
+
+<sqldiff version="1.0">
+	<help>
+		USE:
+			The diffs are ordered by datamodel version number.
+			The script can be run in a top down fashion and is
+			expected to not failor overwrite old data
+		
+		EXPECT:
+			- "use business-database-name;" was called prior to
+			   calling this script
+	</help>
+	
+	<diff>
+		<version>0.1</version>
+		<author>Chuyen Nguyen</author>
+		<date>April 25th 2011</date>
+		<description>
+		</description>
+		<sql>
+			CREATE TABLE IF NOT EXISTS birt_report (id integer not null auto_increment, name varchar(255), description varchar(255),retired bit(1) default NULL, created_on datetime, created_by varchar(255), primary key (id));
+			CREATE TABLE IF NOT EXISTS birt_report_type (id integer not null auto_increment, name varchar(255), report_id integer, path varchar(500), created_on datetime, created_by varchar(255), primary key (id));
+			CREATE TABLE IF NOT EXISTS birt_report_roles (report_id integer not null, role varchar(255) not null, primary key (report_id, role));
+		</sql>
+	</diff>	
+	<diff>
+		<version>0.2</version>
+		<author>Chuyen Nguyen</author>
+		<date>May 13th 2011</date>
+		<description>
+		</description>
+		<sql>
+			CREATE TABLE IF NOT EXISTS birt_report_config (id integer not null auto_increment, url_data varchar(350), temp_file varchar(255), real_path varchar(350), url_birt varchar(350), width varchar(15), format varchar(15), height varchar(15), primary key (id));
+		</sql>
+	</diff>	
+</sqldiff>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.openmrs.module.report.model">
+
+	<class name="BirtReportConfig" table="birt_report_config" batch-size="500">
+
+		<id name="id" type="int" column="id" unsaved-value="0">
+				<generator class="native" />
+		</id>
+		<property name="urlData" column="url_data" length="350"/>
+		<property name="tempFile" column="temp_file" length="255"/>
+		<property name="realPath" column="real_path" length="350"/>
+		<property name="urlBirt" column="url_birt" length="350"/>
+		<property name="width" column="width" />
+		<property name="format" column="format" length="15"/>
+		<property name="height" column="height" />
+		
+	</class>
+</hibernate-mapping>
