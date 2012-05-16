@@ -89,6 +89,11 @@
 
   <repositories>
     <repository>
+      <id>shimla-repo</id>
+      <name>Shimla Nexus Repository</name>
+      <url>http://hospdev.hispindia.org:8081/nexus/content/repositories/thirdparty</url>
+    </repository>
+    <repository>
       <id>openmrs-repo</id>
       <name>OpenMRS Nexus Repository</name>
       <url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
