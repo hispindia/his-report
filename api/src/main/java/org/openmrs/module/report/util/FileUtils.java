@@ -286,7 +286,8 @@ public class FileUtils {
 	    return dir.delete();
 	}
 	public static List<String> listFile(String path){
-		path.replaceAll("//", "/");
+		//harsh  28/6/2012 jenkin : Category CORRECTNESS - Type RV_RETURN_VALUE_IGNORED
+		path=path.replaceAll("//", "/");
 		File file = new File(path);
 		List<String> list = null;
 		if(file != null && file.isDirectory()){
@@ -295,7 +296,8 @@ public class FileUtils {
 				list = new ArrayList<String>();
 				for(String t : temp){
 					String newPath = path+t;
-					newPath.replaceAll("//", "/");
+					//harsh  28/6/2012 jenkin : Category CORRECTNESS - Type RV_RETURN_VALUE_IGNORED
+					newPath=newPath.replaceAll("//", "/");
 					File fileTemp = new File(newPath);
 					if(fileTemp != null && fileTemp.isFile())
 						list.add(newPath);

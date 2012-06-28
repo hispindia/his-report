@@ -110,7 +110,8 @@ Log log = LogFactory.getLog(this.getClass());
 	    	BirtReportConfig config = ReportConstants.getConfig();
 			String tempPath = config.getRealPath();
 			if(StringUtils.isBlank(tempPath)){
-				new Throwable("Not exist realpath for save file report!");
+			Throwable th=new Throwable("Not exist realpath for save file report!");
+			
 			}
 			MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
 	        CommonsMultipartFile file = (CommonsMultipartFile) multipartRequest.getFile("reportFile");

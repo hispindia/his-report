@@ -89,7 +89,7 @@ public class ReportRoleController {
 			Role role = Context.getUserService().getRole(roleId);
 			Set<Role> roles = report.getReportRoles();
 			if(action == 1){
-				if(!roles.contains(roles)){
+				if(!roles.contains(role)){
 					roles.add(role);
 					report.setReportRoles(roles);
 					birtReportService.saveReport(report);
