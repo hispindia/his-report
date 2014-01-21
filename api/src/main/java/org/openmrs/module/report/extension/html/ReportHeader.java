@@ -32,9 +32,9 @@
  */
 package org.openmrs.module.report.extension.html;
 
-import org.openmrs.module.Extension;
+import org.openmrs.module.web.extension.LinkExt;
 
-public class ReportHeader extends Extension {
+public class ReportHeader extends LinkExt {
 
 	public MEDIA_TYPE getMediaType() {
 		return MEDIA_TYPE.html;
