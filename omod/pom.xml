@@ -41,24 +41,9 @@
 		    <version>4.2.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt.core</groupId>
-			<artifactId>coreapi</artifactId>
-		    <version>1.5.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.birt.report.engine</groupId>
-			<artifactId>engineapi</artifactId>
-		    <version>1.5.0</version>
-		</dependency>
-		<dependency>
 			<groupId>org.eclipse.birt</groupId>
-			<artifactId>modelapi</artifactId>
-		    <version>1.5.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.birt.report.viewservlet</groupId>
-			<artifactId>viewservlets</artifactId>
-		    <version>1.5.0</version>
+			<artifactId>coreapi</artifactId>
+		    <version>2.3.2</version>
 		</dependency>
 		
 	</dependencies>
