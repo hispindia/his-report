@@ -14,7 +14,7 @@
   <scm>
     <connection>scm:svn:http://svn.openmrs.org/openmrs-modules/mvntest/trunk/</connection>
     <developerConnection>scm:svn:http://svn.openmrs.org/openmrs-modules/mvntest/trunk/</developerConnection>
-    <url>http://svn.openmrs.org/openmrs-modules/mvntest/trunk/</url>
+    <url>git@github.com:hispindia/report.git</url>
   </scm>
   
   <distributionManagement>
@@ -105,18 +105,36 @@
 
   <repositories>
     <repository>
-      <id>shimla-repo</id>
-      <name>Shimla Nexus Repository</name>
-      <url>http://hospdev.hispindia.org/nexus/content/repositories/thirdparty</url>
+      <id>thirdparty-releases</id>
+      <name>JBoss Thirdparty Releases</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
     </repository>
     <repository>
       <id>openmrs-repo</id>
       <name>OpenMRS Nexus Repository</name>
       <url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
     </repository>
+    <repository>
+	  <id>shimla-nexus-snapshots</id>
+	  <name>OpenMRS Nexus Repository</name>
+	  <url>http://hospdev.hispindia.org/nexus/content/repositories/snapshots</url>
+	  </repository>
+	<repository>
+	  <id>shimla-nexus-releases</id>
+	  <name>OpenMRS Nexus Repository</name>
+	  <url>http://hospdev.hispindia.org/nexus/content/repositories/releases</url>
+	  </repository>
   </repositories>
 
   <pluginRepositories>
+    <pluginRepository>
+      <id>thirdparty-releases</id>
+      <name>JBoss Thirdparty Releases</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
+      <snapshots>
+	<enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
     <pluginRepository>
       <id>openmrs-repo</id>
       <name>OpenMRS Nexus Repository</name>
@@ -125,6 +143,22 @@
 	<enabled>false</enabled>
       </snapshots>
     </pluginRepository>
+    <pluginRepository>
+	  <id>shimla-nexus-snapshots</id>
+	  <name>shimla nexus snapshots</name>
+	  <url>http://hospdev.hispindia.org/nexus/content/repositories/snapshots</url>
+	  <snapshots>
+	  <enabled>false</enabled>
+	  </snapshots>
+	</pluginRepository>
+	<pluginRepository>
+	  <id>shimla-nexus-releases</id>
+	  <name>shimla nexus releases</name>
+	  <url>http://hospdev.hispindia.org/nexus/content/repositories/releases</url>
+	  <snapshots>
+	  <enabled>false</enabled>
+	  </snapshots>
+	  </pluginRepository>
   </pluginRepositories>
 
   <modules>
