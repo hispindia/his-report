@@ -36,6 +36,7 @@
 			<artifactId>openmrs-test</artifactId>
 			<type>pom</type>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>com.ibm.icu</groupId>
 			<artifactId>icu4j</artifactId>
@@ -55,6 +56,22 @@
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>modelapi</artifactId>
 			<version>2.3.2</version>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>org.eclipse.birt.runtime</groupId>
+			<artifactId>com.ibm.icu</artifactId>
+			<version>4.4.2.v20110823</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.birt.runtime</groupId>
+			<artifactId>org.eclipse.birt.runtime</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.birt.runtime</groupId>
+			<artifactId>viewservlets</artifactId>
+			<version>4.2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
