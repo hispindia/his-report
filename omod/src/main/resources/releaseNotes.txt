@@ -1,3 +1,6 @@
+0.2.3
+- #module upgradation
+
 0.2.2
 	- Fixed high priority bugs found by jenkins 
 		V_RETURN_VALUE_IGNORED, Priority: High + RV_RETURN_VALUE_IGNORED, Priority: High + DMI_COLLECTIONS_SHOULD_NOT_CONTAIN_THEMSELVES
