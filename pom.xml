@@ -5,7 +5,7 @@
   <groupId>org.openmrs.module</groupId>
   <artifactId>report</artifactId>
   <name>report</name>
-  <version>0.2.3-SNAPSHOT</version>
+  <version>0.2.3</version>
   <packaging>pom</packaging>
 
   <description>report</description>
@@ -22,13 +22,13 @@
             <repository>
                 <id>shimla-nexus</id>
                 <name>Shimla nexus repo</name>
-                <url>http://hospdev.hispindia.org/nexus/content/repositories/releases/</url>
+                <url>http://hospdev.hispindia.org/nexus/content/repositories/tvha-releases/</url>
             </repository>
         <!-- use the following if you ARE using a snapshot version. -->
             <snapshotRepository>
                 <id>shimla-nexus</id>
                 <name>Shimla nexus repo</name>
-                <url>http://hospdev.hispindia.org/nexus/content/repositories/snapshots/</url>
+                <url>http://hospdev.hispindia.org/nexus/content/repositories/tvha-snapshots/</url>
                 <uniqueVersion>false</uniqueVersion>
              </snapshotRepository>
   </distributionManagement>
@@ -117,12 +117,12 @@
     <repository>
 	  <id>shimla-nexus-snapshots</id>
 	  <name>OpenMRS Nexus Repository</name>
-	  <url>http://hospdev.hispindia.org/nexus/content/repositories/snapshots</url>
+	  <url>http://hospdev.hispindia.org/nexus/content/repositories/tvha-snapshots</url>
 	  </repository>
 	<repository>
 	  <id>shimla-nexus-releases</id>
 	  <name>OpenMRS Nexus Repository</name>
-	  <url>http://hospdev.hispindia.org/nexus/content/repositories/releases</url>
+	  <url>http://hospdev.hispindia.org/nexus/content/repositories/tvha-releases</url>
 	  </repository>
   </repositories>
 
@@ -146,7 +146,7 @@
     <pluginRepository>
 	  <id>shimla-nexus-snapshots</id>
 	  <name>shimla nexus snapshots</name>
-	  <url>http://hospdev.hispindia.org/nexus/content/repositories/snapshots</url>
+	  <url>http://hospdev.hispindia.org/nexus/content/repositories/tvha-snapshots</url>
 	  <snapshots>
 	  <enabled>false</enabled>
 	  </snapshots>
@@ -154,7 +154,7 @@
 	<pluginRepository>
 	  <id>shimla-nexus-releases</id>
 	  <name>shimla nexus releases</name>
-	  <url>http://hospdev.hispindia.org/nexus/content/repositories/releases</url>
+	  <url>http://hospdev.hispindia.org/nexus/content/repositories/tvha-releases</url>
 	  <snapshots>
 	  <enabled>false</enabled>
 	  </snapshots>
